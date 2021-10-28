@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+	// Adding Velocity to player.
         myRb.velocity = new Vector2(horizontalInput * playerSpeed * Time.fixedDeltaTime, myRb.velocity.y);
 
         if(jump)
